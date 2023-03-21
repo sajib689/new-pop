@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop up</title>
+</head>
+<body>
+    <div class="pop-container">
+        <h4>Are You 18+?</h4>
+        <div class="pop-btn">
+            <button class="btn" type="submit" id="yes">Yes</button>
+            <button class="btn" type="submit" id="no">No</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="counter-info">
+         <h3>Counter App</h3>
+         <h1 class="counter-number">0</h1>
+        </div>
+         <hr>
+         <div class="counter-btn">
+             <button type="submit" id="btn-sub">Subtract</button>
+             <button type="submit" id="btn-reset">Reset</button>
+             <button type="submit" id="btn-add">Add</button>
+         </div>
+     </div>
+    <style>
+        .pop-container{
+            width: 300px;
+            height: auto;
+            background: #005289;
+            padding: 20px 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: none;
+        }
+        .pop-container h4{
+            font-size: 23px;
+            color: white;
+        }
+        .btn{
+            padding: 10px 20px;
+            background: orangered;
+            border: 0;
+            border-radius: 5px;
+            margin: 12px;
+        }
+        /* Extra code */
+        .container{
+            width: 400px;
+            height: auto;
+            background: #005289;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: none;
+        }
+        .counter-info{
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .counter-info h3{
+            color: white;
+            font-size: 25px;
+            letter-spacing: 1;
+            font-family: 'Poppins', sans-serif;
+        }
+        .counter-info h1{
+            color: white;
+            font-size: 35px;
+        }
+        .counter-btn {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #btn-sub,
+        #btn-reset,
+        #btn-add{
+            padding: 10px 20px;
+            color: white;
+            font-weight: 600;
+            border: 0;
+            border-radius: 5px;
+        }
+        #btn-sub{
+            background: #fd408b;
+        }
+        #btn-reset{
+            background: #feffdf;
+            color: black;
+        }
+        #btn-add{
+            background: #057f10;
+        }
+    </style>
+    <script src="./app.js"></script>
+</body>
+</html>
